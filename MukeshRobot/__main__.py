@@ -106,7 +106,7 @@ buttons = [
         InlineKeyboardButton(text="🏡𝐂𝐇𝐀𝐍𝐍𝐄𝐋🏡", url=f"https://t.me/queen_officialchnl"),
     ],
     [
-        InlineKeyboardButton(text="🌱𝐒𝐎𝐔𝐑𝐂𝐄🌱", callback_data="mukesh_"),
+        InlineKeyboardButton(text="🌱𝐀𝐁𝐎𝐔𝐓 𝐌𝐄🌱", callback_data="mukesh_"),
     ],
 ]
 
@@ -401,8 +401,8 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                             text="📍𝐎𝐖𝐍𝐄𝐑📍", url=f"https://t.me/Queen_sakhi"
                         ),
                         InlineKeyboardButton(
-                            text="🎄𝐑𝐄𝐏𝐎🎄", 
-                            url="https://graph.org/file/8a6e40cffa440c22bc320.jpg",
+                            text="🎄𝐒𝐔𝐏𝐏𝐎𝐑𝐓🎄", 
+                            url="https://t.me/queen_officialchnl",
                         ),
                     ],
                     [
@@ -1054,7 +1054,7 @@ def donate(update: Update, context: CallbackContext):
 
         if OWNER_ID != {OWNER_ID} and DONATION_LINK:
             update.effective_message.reply_text(
-                f"» ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴩᴇʀ ᴏғ {dispatcher.bot.first_name} sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ɪs [VIP BOY](https://t.me/Queen_sakhi)"
+                f"» ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴩᴇʀ ᴏғ {dispatcher.bot.first_name} sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ɪs [𝐐𝐔𝐄𝐄𝐍](https://t.me/Queen_sakhi)"
                 f"\n\nʙᴜᴛ ʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴅᴏɴᴀᴛᴇ ᴛᴏ ᴛʜᴇ ᴩᴇʀsᴏɴ ᴄᴜʀʀᴇɴᴛʟʏ ʀᴜɴɴɪɴɢ ᴍᴇ : [ʜᴇʀᴇ]({DONATION_LINK})",
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
