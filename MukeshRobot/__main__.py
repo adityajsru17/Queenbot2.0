@@ -79,7 +79,17 @@ PM_START_TEXT = """
 
 👀𝐇𝐞𝐲 {} , [🖤]({})
 
-══❰🌹𝐖𝐄𝐋𝐂𝐎𝐌𝐄🌹❱═══❍
+╔══❰🌺𝐖𝐄𝐋𝐂𝐎𝐌𝐄🌺❱═══❍⊱❁۪۪
+║
+║┣⪼ {} 
+║
+╚═════════════════❍⊱❁۪۪
+      ╔═════ஜ۩۞۩ஜ════╗
+
+        ♨️👑 Q̬̂U͎E͎E͎N͎ 👑♨️
+    
+      ╚═════ஜ۩۞۩ஜ════╝
+
 ❤️ 𝐈 𝐀ᴍ 𝐀ɴ 𝐀ᴅᴠᴀᴄɴᴇᴅ 𝐀ɴᴅ 𝐒ᴜᴘᴇʀꜰᴀꜱᴛ 𝐌ᴀɴᴀɢᴇᴍᴇɴᴛ 𝐀ɴᴅ 𝐕ᴄ 𝐏ʟᴀʏᴇʀ  𝐖ɪᴛʜ 𝟐𝟒𝐱𝟕 𝐀ᴄᴛɪᴠᴇ 𝐅ᴏʀ 𝐓ᴇʟᴇɢʀᴀᴍ 𝐆ʀᴏᴜᴘꜱ 𝐀ɴᴅ 𝐂ʜᴀɴɴᴇʟ 👑
 🩷 𝐅ᴇᴇʟ 𝐋ᴀɢ 𝐅ʀᴇᴇ 𝐓ᴏ 𝐀ᴅᴅ 𝐌ᴇ 𝐈ɴ 𝐘ᴏᴜʀ 𝐆ʀᴏᴜᴘ 𝐀ɴᴅ 𝐄ɴᴊᴏʏ 𝐒ᴜᴘᴇʀ 𝐇ɪɢʜ 𝐐ᴜᴀʟɪᴛʏ 𝐌ᴀɴᴀɢɪɴɢ 𝐆ʀᴏᴜᴘ & 𝐏ʟᴀʏ 𝐀ᴜᴅɪᴏ 𝐀ɴᴅ 𝐕ɪᴅᴇᴏ 👑
 👑 [Q̬̂U͎E͎E͎N͎](https://t.me/queen_officialchnl) 👑↢╣[♡_♡]╠
@@ -87,8 +97,6 @@ PM_START_TEXT = """
 
 buttons = [
     [
-
-        
         InlineKeyboardButton(
             text="☆ 𝐀𝐝𝐝 𝐌𝐞 𝐃𝐞𝐚𝐫 ☆",
             url=f"https://t.me/{dispatcher.bot.username}?startgroup=true",
@@ -99,17 +107,17 @@ buttons = [
         InlineKeyboardButton(text="🍷𝐌𝐔𝐒𝐈𝐂🍷", callback_data="Music_"),
     ],
     [
+        InlineKeyboardButton(text="🌷𝐆𝐑𝐎𝐔𝐏🌷", url=f"https://t.me/queen_supportgroup"),
+        InlineKeyboardButton(text="🏡𝐂𝐇𝐀𝐍𝐍𝐄𝐋🏡", url=f"https://t.me/queen_officialchnl"),
+    ],
+    [
         InlineKeyboardButton(
             text="☆ 𝐂𝐇𝐀𝐓 𝐆𝐏𝐓 ☆",
             callback_data="Xytra_"
         ),
     ],
     [
-        InlineKeyboardButton(text="🌷𝐆𝐑𝐎𝐔𝐏🌷", url=f"https://t.me/queen_supportgroup"),
-        InlineKeyboardButton(text="🏡𝐂𝐇𝐀𝐍𝐍𝐄𝐋🏡", url=f"https://t.me/queen_officialchnl"),
-    ],
-    [
-        InlineKeyboardButton(text="🌱𝐀𝐁𝐎𝐔𝐓 𝐌𝐄🌱", callback_data="mukesh_"),
+        InlineKeyboardButton(text="🌱𝐒𝐎𝐔𝐑𝐂𝐄🌱", callback_data="mukesh_"),
     ],
 ]
 
@@ -232,16 +240,12 @@ def start(update: Update, context: CallbackContext):
             lol = update.effective_message.reply_text(
                 PM_START_TEX.format(usr.first_name), parse_mode=ParseMode.MARKDOWN
             )
-            time.sleep(0.3)
-            lol.edit_text("𝗦𝗧𝗔𝗥𝗧𝗜𝗡𝗚..")
-            time.sleep(0.3)
-            lol.edit_text("𝗦𝗧𝗔𝗥𝗧𝗜𝗡𝗚...")
-            time.sleep(0.3)
-            lol.edit_text("⚪ ⚫ ⚫")
-            time.sleep(0.3)
-            lol.edit_text("⚪ ⚪ ⚫")
-            time.sleep(0.3)
-            lol.edit_text("⚪ ⚪ ⚪")
+            time.sleep(0.4)
+            lol.edit_text("𝐒𝐭𝐚𝐫𝐭𝐢𝐧𝐠.")
+            time.sleep(0.4)
+            lol.edit_text("𝐒𝐭𝐚𝐫𝐭𝐢𝐧𝐠..")
+            time.sleep(0.4)
+            lol.edit_text("𝐒𝐭𝐚𝐫𝐭𝐢𝐧𝐠... ")
             time.sleep(0.4)
             lol.delete()
             
@@ -408,8 +412,8 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                             text="📍𝐎𝐖𝐍𝐄𝐑📍", url=f"https://t.me/Queen_sakhi"
                         ),
                         InlineKeyboardButton(
-                            text="🎄𝐒𝐔𝐏𝐏𝐎𝐑𝐓🎄", 
-                            url="https://t.me/queen_officialchnl",
+                            text="🎄𝐑𝐄𝐏𝐎🎄", 
+                            url="https://graph.org/file/8a6e40cffa440c22bc320.jpg",
                         ),
                     ],
                     [
@@ -428,29 +432,6 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
             disable_web_page_preview=False,
         )
 
-@run_async
-def GPT_info_callback(update: Update, context: CallbackContext):
-    query = update.callback_query
-    if query.data == "Xytra_":  # Replace with your actual callback data
-        info_text = (
-            "🌟 *New Feature Alert!* 🌟\n\n"
-            "Exciting news! We've integrated a chat GPT feature in our bot.\n"
-            "To use it, simply type `/gpt ask anything` in the chat. "
-            "Ask any question, and the bot will generate a response for you!"
-        )
-        query.message.edit_text(
-            text=info_text,
-            parse_mode=ParseMode.MARKDOWN,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-        InlineKeyboardButton(text="🛠️𝗦𝗨𝗣𝗣𝗢𝗥𝗧🛠️", url=f"https://t.me/queen_supportgroup"),
-        InlineKeyboardButton(text="📣𝗨𝗣𝗗𝗔𝗧𝗘𝗦📣", url=f"https://t.me/queen_officialchnl"),
-                    ]
-                    
-            ),
-        )
-   
 
 @run_async
 def Music_about_callback(update: Update, context: CallbackContext):
@@ -1084,7 +1065,7 @@ def donate(update: Update, context: CallbackContext):
 
         if OWNER_ID != {OWNER_ID} and DONATION_LINK:
             update.effective_message.reply_text(
-                f"» ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴩᴇʀ ᴏғ {dispatcher.bot.first_name} sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ɪs [𝐐𝐔𝐄𝐄𝐍](https://t.me/Queen_sakhi)"
+                f"» ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴩᴇʀ ᴏғ {dispatcher.bot.first_name} sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ɪs [VIP BOY](https://t.me/Queen_sakhi)"
                 f"\n\nʙᴜᴛ ʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴅᴏɴᴀᴛᴇ ᴛᴏ ᴛʜᴇ ᴩᴇʀsᴏɴ ᴄᴜʀʀᴇɴᴛʟʏ ʀᴜɴɴɪɴɢ ᴍᴇ : [ʜᴇʀᴇ]({DONATION_LINK})",
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
@@ -1172,38 +1153,27 @@ def main():
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
 
     # dispatcher.add_handler(test_handler)
-dispatcher.add_handler(start_handler)
-dispatcher.add_handler(help_handler)
-dispatcher.add_handler(about_callback_handler)
-dispatcher.add_handler(Music_callback_handler)
-dispatcher.add_handler(settings_handler)
-dispatcher.add_handler(help_callback_handler)
-dispatcher.add_handler(settings_callback_handler)
-dispatcher.add_handler(migrate_handler)
-dispatcher.add_handler(donate_handler)
-dispatcher.add_handler(start_handler)
-dispatcher.add_handler(help_handler)
-dispatcher.add_handler(about_callback_handler)
-dispatcher.add_handler(Music_callback_handler)
-dispatcher.add_handler(settings_handler)
-dispatcher.add_handler(help_callback_handler)
-dispatcher.add_handler(settings_callback_handler)
-dispatcher.add_handler(migrate_handler)
-dispatcher.add_handler(donate_handler)
-dispatcher.add_handler(GPT_info_callback)
+    dispatcher.add_handler(start_handler)
+    dispatcher.add_handler(help_handler)
+    dispatcher.add_handler(about_callback_handler)
+    dispatcher.add_handler(Music_callback_handler)
+    dispatcher.add_handler(settings_handler)
+    dispatcher.add_handler(help_callback_handler)
+    dispatcher.add_handler(settings_callback_handler)
+    dispatcher.add_handler(migrate_handler)
+    dispatcher.add_handler(donate_handler)
 
-dispatcher.add_error_handler(error_callback)
+    dispatcher.add_error_handler(error_callback)
 
-LOGGER.info("🌱𝐁𝐎𝐓🌷𝐒𝐓𝐀𝐑𝐓𝐄𝐃🌺𝐒𝐔𝐂𝐂𝐄𝐒𝐒𝐅𝐔𝐋𝐋𝐔🌱\n\n╔═════ஜ۩۞۩ஜ════╗\n\n♨️𝐐𝐔𝐄𝐄𝐍♨️\n\n╚═════ஜ۩۞۩ஜ════╝")
+    LOGGER.info("🌱𝐁𝐎𝐓🌷𝐒𝐓𝐀𝐑𝐓𝐄𝐃🌺𝐒𝐔𝐂𝐂𝐄𝐒𝐒𝐅𝐔𝐋𝐋𝐔🌱\n\n╔═════ஜ۩۞۩ஜ════╗\n\n♨️𝐐𝐔𝐄𝐄𝐍♨️\n\n╚═════ஜ۩۞۩ஜ════╝")
+    updater.start_polling(timeout=15, read_latency=4, clean=True)
 
-updater.start_polling(timeout=15, read_latency=4, clean=True)
+    if len(argv) not in (1, 3, 4):
+        telethn.disconnect()
+    else:
+        telethn.run_until_disconnected()
 
-if len(argv) not in (1, 3, 4):
-    telethn.disconnect()
-else:
-    telethn.run_until_disconnected()
-
-updater.idle()
+    updater.idle()
 
 
 if __name__ == "__main__":
