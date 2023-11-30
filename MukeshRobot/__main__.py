@@ -395,18 +395,26 @@ def xytra_callback(update: Update, context: CallbackContext):
     query.answer()
 
     if query.data == "Xytra_":
-        # Edit the current message
-        query.message.edit_text(
+        # Delete the current message
+        query.message.delete()
+
+        # Send the welcome message for ChatGPT feature with the added buttons
+        context.bot.send_message(
+            chat_id=query.message.chat_id,
             text="Welcome to the ChatGPT feature! You can use /gpt to ask questions.",
             reply_markup=InlineKeyboardMarkup(
                 [
+                    [
+                        InlineKeyboardButton(text="🛠️𝗦𝗨𝗣𝗣𝗢𝗥𝗧🛠️", url="https://t.me/queen_supportgroup"),
+                        InlineKeyboardButton(text="📣𝗨𝗣𝗗𝗔𝗧𝗘𝗦📣", url="https://t.me/queen_officialchnl"),
+                    ],
                     [
                         InlineKeyboardButton(text="✯ вαϲк ✯", callback_data="mukesh_back"),
                     ],
                 ]
             ),
         )
-   
+
     
 @run_async
 def Mukesh_about_callback(update: Update, context: CallbackContext):
