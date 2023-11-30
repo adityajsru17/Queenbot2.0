@@ -396,7 +396,7 @@ def xytra_callback(update: Update, context: CallbackContext):
 
     if query.data == "Xytra_":
         # Send a welcome message for ChatGPT feature
-        context.bot.send_message(
+        query.message.edit_text(
             chat_id=query.message.chat_id,
             text="Welcome to the ChatGPT feature! You can use /gpt to ask questions.",
             reply_markup=InlineKeyboardMarkup(
