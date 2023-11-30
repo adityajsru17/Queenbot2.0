@@ -1174,16 +1174,7 @@ def main():
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
 
     # dispatcher.add_handler(test_handler)
-    dispatcher.add_handler(start_handler)
-    dispatcher.add_handler(help_handler)
-    dispatcher.add_handler(about_callback_handler)
-    dispatcher.add_handler(Music_callback_handler)
-    dispatcher.add_handler(settings_handler)
-    dispatcher.add_handler(help_callback_handler)
-    dispatcher.add_handler(settings_callback_handler)
-    dispatcher.add_handler(migrate_handler)
-    dispatcher.add_handler(donate_handler )
-    dispatcher.add_handler(start_handler)
+dispatcher.add_handler(start_handler)
 dispatcher.add_handler(help_handler)
 dispatcher.add_handler(about_callback_handler)
 dispatcher.add_handler(Music_callback_handler)
@@ -1192,15 +1183,22 @@ dispatcher.add_handler(help_callback_handler)
 dispatcher.add_handler(settings_callback_handler)
 dispatcher.add_handler(migrate_handler)
 dispatcher.add_handler(donate_handler)
+dispatcher.add_handler(start_handler)
+dispatcher.add_handler(help_handler)
+dispatcher.add_handler(about_callback_handler)
+dispatcher.add_handler(Music_callback_handler)
+dispatcher.add_handler(settings_handler)
+dispatcher.add_handler(help_callback_handler)
+dispatcher.add_handler(settings_callback_handler)
+dispatcher.add_handler(migrate_handler)
+dispatcher.add_handler(donate_handler)
+dispatcher.add_handler(GPT_info_callback)
 
-# Add the GPT_info_callback handler
-dispatcher.add_handler(CommandHandler("gptinfo", GPT_info_callback))
+dispatcher.add_error_handler(error_callback)
 
+LOGGER.info("🌱𝐁𝐎𝐓🌷𝐒𝐓𝐀𝐑𝐓𝐄𝐃🌺𝐒𝐔𝐂𝐂𝐄𝐒𝐒𝐅𝐔𝐋𝐋𝐔🌱\n\n╔═════ஜ۩۞۩ஜ════╗\n\n♨️𝐐𝐔𝐄𝐄𝐍♨️\n\n╚═════ஜ۩۞۩ஜ════╝")
+updater.start_polling(timeout=15, read_latency=4, clean=True)
 
-    dispatcher.add_error_handler(error_callback)
-
-    LOGGER.info("🌱𝐁𝐎𝐓🌷𝐒𝐓𝐀𝐑𝐓𝐄𝐃🌺𝐒𝐔𝐂𝐂𝐄𝐒𝐒𝐅𝐔𝐋𝐋𝐔🌱\n\n╔═════ஜ۩۞۩ஜ════╗\n\n♨️𝐐𝐔𝐄𝐄𝐍♨️\n\n╚═════ஜ۩۞۩ஜ════╝")
-    updater.start_polling(timeout=15, read_latency=4, clean=True)
 
     if len(argv) not in (1, 3, 4):
         telethn.disconnect()
