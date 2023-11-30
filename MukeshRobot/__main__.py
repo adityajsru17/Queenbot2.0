@@ -448,11 +448,19 @@ def GPT_info_callback(update: Update, context: CallbackContext):
         InlineKeyboardButton(text="📣𝗨𝗣𝗗𝗔𝗧𝗘𝗦📣", url=f"https://t.me/queen_officialchnl"),
     ],
                     
-                    [InlineKeyboardButton(text="✯ Back ✯", callback_data="mukesh_back")],
+                    [InlineKeyboardButton(text="✯ Back ✯", callback_data="gpt_back")],
                 ]
             ),
         )
-
+   elif query.data == "gpt_back":
+        first_name = update.effective_user.first_name 
+        query.message.edit_text(
+            PM_START_TEXT.format(escape_markdown(first_name), (START_IMG), BOT_NAME),
+            reply_markup=InlineKeyboardMarkup(buttons),
+            parse_mode=ParseMode.MARKDOWN,
+            timeout=60,
+            disable_web_page_preview=False,
+)
 
 @run_async
 def Music_about_callback(update: Update, context: CallbackContext):
