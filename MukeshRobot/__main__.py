@@ -1182,7 +1182,20 @@ def main():
     dispatcher.add_handler(help_callback_handler)
     dispatcher.add_handler(settings_callback_handler)
     dispatcher.add_handler(migrate_handler)
-    dispatcher.add_handler(donate_handler)
+    dispatcher.add_handler(donate_handler )
+    dispatcher.add_handler(start_handler)
+dispatcher.add_handler(help_handler)
+dispatcher.add_handler(about_callback_handler)
+dispatcher.add_handler(Music_callback_handler)
+dispatcher.add_handler(settings_handler)
+dispatcher.add_handler(help_callback_handler)
+dispatcher.add_handler(settings_callback_handler)
+dispatcher.add_handler(migrate_handler)
+dispatcher.add_handler(donate_handler)
+
+# Add the GPT_info_callback handler
+dispatcher.add_handler(CommandHandler("gptinfo", GPT_info_callback))
+
 
     dispatcher.add_error_handler(error_callback)
 
