@@ -1197,8 +1197,7 @@ dispatcher.add_handler(GPT_info_callback)
 dispatcher.add_error_handler(error_callback)
 
 LOGGER.info("🌱𝐁𝐎𝐓🌷𝐒𝐓𝐀𝐑𝐓𝐄𝐃🌺𝐒𝐔𝐂𝐂𝐄𝐒𝐒𝐅𝐔𝐋𝐋𝐔🌱\n\n╔═════ஜ۩۞۩ஜ════╗\n\n♨️𝐐𝐔𝐄𝐄𝐍♨️\n\n╚═════ஜ۩۞۩ஜ════╝")
-updater.start_polling(timeout=15, read_latency=4, clean=True)
-
+    updater.start_polling(timeout=15, read_latency=4, clean=True)
 
     if len(argv) not in (1, 3, 4):
         telethn.disconnect()
@@ -1206,7 +1205,6 @@ updater.start_polling(timeout=15, read_latency=4, clean=True)
         telethn.run_until_disconnected()
 
     updater.idle()
-
 
 if __name__ == "__main__":
     LOGGER.info("Successfully loaded modules: " + str(ALL_MODULES))
