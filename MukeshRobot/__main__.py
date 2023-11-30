@@ -395,15 +395,14 @@ def xytra_callback(update: Update, context: CallbackContext):
     query.answer()
 
     if query.data == "Xytra_":
-        # Send a welcome message for ChatGPT feature
+        # Edit the current message
         query.message.edit_text(
-            chat_id=query.message.chat_id,
             text="Welcome to the ChatGPT feature! You can use /gpt to ask questions.",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(text="✯ вαϲк ✯", callback_data="mukesh_back"),
-],
+                    ],
                 ]
             ),
         )
