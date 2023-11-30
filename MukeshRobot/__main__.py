@@ -428,6 +428,31 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
             disable_web_page_preview=False,
         )
 
+@run_async
+def GPT_info_callback(update: Update, context: CallbackContext):
+    query = update.callback_query
+    if query.data == "Xytra_":  # Replace with your actual callback data
+        info_text = (
+            "🌟 *New Feature Alert!* 🌟\n\n"
+            "Exciting news! We've integrated a chat GPT feature in our bot.\n"
+            "To use it, simply type `/gpt ask anything` in the chat. "
+            "Ask any question, and the bot will generate a response for you!"
+        )
+        query.message.edit_text(
+            text=info_text,
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+        InlineKeyboardButton(text="🛠️𝗦𝗨𝗣𝗣𝗢𝗥𝗧🛠️", url=f"https://t.me/queen_supportgroup"),
+        InlineKeyboardButton(text="📣𝗨𝗣𝗗𝗔𝗧𝗘𝗦📣", url=f"https://t.me/queen_officialchnl"),
+    ],
+                    
+                    [InlineKeyboardButton(text="✯ Back ✯", callback_data="mukesh_back")],
+                ]
+            ),
+        )
+
 
 @run_async
 def Music_about_callback(update: Update, context: CallbackContext):
