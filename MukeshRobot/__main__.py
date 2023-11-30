@@ -402,28 +402,12 @@ def xytra_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(
-                            text="Back",
-                            callback_data="mukesh_back",  # Adjust the callback_data as needed
-                        )
-                    ]
+                        InlineKeyboardButton(text="✯ вαϲк ✯", callback_data="mukesh_back"),
+],
                 ]
             ),
         )
-    elif query.data == "mukesh_back":
-    # Send the main page message
-    context.bot.send_message(
-        chat_id=query.message.chat_id,
-        text=PM_START_TEXT.format(
-            escape_markdown(update.effective_user.first_name),
-            (START_IMG),
-            BOT_NAME,
-        ),
-        reply_markup=InlineKeyboardMarkup(buttons),
-        parse_mode=ParseMode.MARKDOWN,
-        timeout=60,
-        disable_web_page_preview=False,
-    )
+   
     
 @run_async
 def Mukesh_about_callback(update: Update, context: CallbackContext):
