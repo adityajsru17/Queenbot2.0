@@ -103,7 +103,9 @@ buttons = [
     ],
     [
     InlineKeyboardButton(
-        text="☆ 𝐂𝐇𝐀𝐓 𝐆𝐏𝐓 ☆",
+        text="🦾𝐂𝐇𝐀𝐓 𝐆𝐏𝐓
+      🤖
+     ",
         callback_data="Xytra_"
     ),
 ],
@@ -431,8 +433,8 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                             text="📍𝐎𝐖𝐍𝐄𝐑📍", url=f"https://t.me/Queen_sakhi"
                         ),
                         InlineKeyboardButton(
-                            text="🎄𝐑𝐄𝐏𝐎🎄", 
-                            url="https://graph.org/file/8a6e40cffa440c22bc320.jpg",
+                            text="🎄𝐒𝐔𝐏𝐏𝐎𝐑𝐓🎄", 
+                            url="https://t.me/queen_officialchnl",
                         ),
                     ],
                     [
