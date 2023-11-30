@@ -87,6 +87,8 @@ PM_START_TEXT = """
 
 buttons = [
     [
+
+        
         InlineKeyboardButton(
             text="☆ 𝐀𝐝𝐝 𝐌𝐞 𝐃𝐞𝐚𝐫 ☆",
             url=f"https://t.me/{dispatcher.bot.username}?startgroup=true",
@@ -99,7 +101,7 @@ buttons = [
     [
         InlineKeyboardButton(
             text="☆ 𝐂𝐇𝐀𝐓 𝐆𝐏𝐓 ☆",
-            url=f"https://t.me/sasta_coder
+            url=f"https://t.me/sasta_coder"
         ),
     ],
     [
