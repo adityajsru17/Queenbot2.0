@@ -103,9 +103,7 @@ buttons = [
     ],
     [
     InlineKeyboardButton(
-        text="🦾𝐂𝐇𝐀𝐓 𝐆𝐏𝐓
-      🤖
-     ",
+        text="🦾𝐂𝐇𝐀𝐓 𝐆𝐏𝐓🤖",
         callback_data="Xytra_"
     ),
 ],
