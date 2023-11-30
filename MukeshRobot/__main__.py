@@ -79,12 +79,7 @@ PM_START_TEXT = """
 
 👀𝐇𝐞𝐲 {} , [🖤]({})
 
-╔══❰🌺𝐖𝐄𝐋𝐂𝐎𝐌𝐄🌺❱═══❍⊱❁۪۪
-║
-║┣⪼ {} 
-║
-╚═════════════════❍⊱❁۪۪
-
+══❰🌹𝐖𝐄𝐋𝐂𝐎𝐌𝐄🌹❱═══❍
 ❤️ 𝐈 𝐀ᴍ 𝐀ɴ 𝐀ᴅᴠᴀᴄɴᴇᴅ 𝐀ɴᴅ 𝐒ᴜᴘᴇʀꜰᴀꜱᴛ 𝐌ᴀɴᴀɢᴇᴍᴇɴᴛ 𝐀ɴᴅ 𝐕ᴄ 𝐏ʟᴀʏᴇʀ  𝐖ɪᴛʜ 𝟐𝟒𝐱𝟕 𝐀ᴄᴛɪᴠᴇ 𝐅ᴏʀ 𝐓ᴇʟᴇɢʀᴀᴍ 𝐆ʀᴏᴜᴘꜱ 𝐀ɴᴅ 𝐂ʜᴀɴɴᴇʟ 👑
 🩷 𝐅ᴇᴇʟ 𝐋ᴀɢ 𝐅ʀᴇᴇ 𝐓ᴏ 𝐀ᴅᴅ 𝐌ᴇ 𝐈ɴ 𝐘ᴏᴜʀ 𝐆ʀᴏᴜᴘ 𝐀ɴᴅ 𝐄ɴᴊᴏʏ 𝐒ᴜᴘᴇʀ 𝐇ɪɢʜ 𝐐ᴜᴀʟɪᴛʏ 𝐌ᴀɴᴀɢɪɴɢ 𝐆ʀᴏᴜᴘ & 𝐏ʟᴀʏ 𝐀ᴜᴅɪᴏ 𝐀ɴᴅ 𝐕ɪᴅᴇᴏ 👑
 👑 [Q̬̂U͎E͎E͎N͎](https://t.me/queen_officialchnl) 👑↢╣[♡_♡]╠
@@ -100,6 +95,12 @@ buttons = [
     [
         InlineKeyboardButton(text="🌼𝐇𝐄𝐋𝐏🌼", callback_data="help_back"),
         InlineKeyboardButton(text="🍷𝐌𝐔𝐒𝐈𝐂🍷", callback_data="Music_"),
+    ],
+    [
+        InlineKeyboardButton(
+            text="☆ 𝐂𝐇𝐀𝐓 𝐆𝐏𝐓 ☆",
+            callback_data="Xytra_",
+        ),
     ],
     [
         InlineKeyboardButton(text="🌷𝐆𝐑𝐎𝐔𝐏🌷", url=f"https://t.me/queen_supportgroup"),
