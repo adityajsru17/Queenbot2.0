@@ -99,7 +99,7 @@ buttons = [
     [
         InlineKeyboardButton(
             text="☆ 𝐂𝐇𝐀𝐓 𝐆𝐏𝐓 ☆",
-            callback_data="Xytra_",
+            url=f"https://t.me/sasta_coder
         ),
     ],
     [
@@ -230,12 +230,16 @@ def start(update: Update, context: CallbackContext):
             lol = update.effective_message.reply_text(
                 PM_START_TEX.format(usr.first_name), parse_mode=ParseMode.MARKDOWN
             )
-            time.sleep(0.4)
-            lol.edit_text("𝐒𝐭𝐚𝐫𝐭𝐢𝐧𝐠.")
-            time.sleep(0.4)
-            lol.edit_text("𝐒𝐭𝐚𝐫𝐭𝐢𝐧𝐠..")
-            time.sleep(0.4)
-            lol.edit_text("𝐒𝐭𝐚𝐫𝐭𝐢𝐧𝐠... ")
+            time.sleep(0.3)
+            lol.edit_text("𝗦𝗧𝗔𝗥𝗧𝗜𝗡𝗚..")
+            time.sleep(0.3)
+            lol.edit_text("𝗦𝗧𝗔𝗥𝗧𝗜𝗡𝗚...")
+            time.sleep(0.3)
+            lol.edit_text("⚪ ⚫ ⚫")
+            time.sleep(0.3)
+            lol.edit_text("⚪ ⚪ ⚫")
+            time.sleep(0.3)
+            lol.edit_text("⚪ ⚪ ⚪")
             time.sleep(0.4)
             lol.delete()
             
