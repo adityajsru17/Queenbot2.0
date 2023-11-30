@@ -111,11 +111,13 @@ buttons = [
         InlineKeyboardButton(text="🏡𝐂𝐇𝐀𝐍𝐍𝐄𝐋🏡", url=f"https://t.me/queen_officialchnl"),
     ],
     [
-        InlineKeyboardButton(
-            text="☆ 𝐂𝐇𝐀𝐓 𝐆𝐏𝐓 ☆",
-            callback_data="Xytra_"
-        ),
-    ],
+    InlineKeyboardButton(
+        text="☆ 𝐂𝐇𝐀𝐓 𝐆𝐏𝐓 ☆",
+        callback_data="Xytra_"
+    ),
+],
+
+
     [
         InlineKeyboardButton(text="🌱𝐒𝐎𝐔𝐑𝐂𝐄🌱", callback_data="mukesh_"),
     ],
@@ -387,7 +389,28 @@ def help_button(update, context):
     except BadRequest:
         pass
 
+@run_async
+def xytra_callback(update: Update, context: CallbackContext):
+    query = update.callback_query
+    query.answer()
 
+    if query.data == "Xytra_":
+        # Send a welcome message for ChatGPT feature
+        context.bot.send_message(
+            chat_id=query.message.chat_id,
+            text="Welcome to the ChatGPT feature! You can use /gpt to ask questions.",
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="Back",
+                            callback_data="help_back",  # Adjust the callback_data as needed
+                        )
+                    ]
+                ]
+            ),
+        )
+    
 @run_async
 def Mukesh_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
@@ -1155,6 +1178,8 @@ def main():
     # dispatcher.add_handler(test_handler)
     dispatcher.add_handler(start_handler)
     dispatcher.add_handler(help_handler)
+    dispatcher.add_handler(CallbackQueryHandler(xytra_callback, pattern="Xytra_"))
+    
     dispatcher.add_handler(about_callback_handler)
     dispatcher.add_handler(Music_callback_handler)
     dispatcher.add_handler(settings_handler)
