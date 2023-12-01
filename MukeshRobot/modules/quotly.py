@@ -1,3 +1,5 @@
+from MukeshRobot import pbot
+from MukeshRobot.utils.errors import capture_err
 import base64
 import json
 import os
@@ -297,5 +299,12 @@ async def quotly_handler(event):
     await msg.delete()
 
 
-# Module registration
-mod_name = "𝐐ᴜᴏᴛʟʏ"
+__mod_name__ = "𝐐ᴜᴏᴛʟʏ"
+__help__ = """
+⚡️ **Quotly Module:**
+   
+- `/q`: Create a quotly's quote. Reply to a message to generate a quote.
+
+👑 [Q̬̂U͎E͎E͎N͎](https://t.me/queen_officialchnl) 👑↢╣[♡_♡]╠
+"""
+
