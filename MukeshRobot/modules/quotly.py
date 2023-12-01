@@ -11,7 +11,7 @@ from telethon.tl import types
 from telethon.tl.custom import Message
 from telethon.utils import get_display_name, get_peer_id
 
-from Alone.events import register
+from MukeshRobot.events import register
 
 ##api
 
